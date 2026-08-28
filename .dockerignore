@@ -1,0 +1,12 @@
+# Keep secrets out of images and published packages.
+# COPY . . would otherwise bake these into a layer, where deleting them later
+# does not remove them.
+.env
+.env.*
+!.env.example
+.tenants.json
+.tenants.json.*
+*.pem
+*.key
+node_modules/
+.git/

@@ -1,0 +1,32 @@
+{
+  "name": "perflo-quickstart",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Give an AI agent a spending budget it cannot exceed. Runnable examples.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "tsx src/start.ts",
+    "check": "tsc --noEmit",
+    "individual:01": "tsx individual/01-first-paid-task.ts",
+    "individual:02": "tsx individual/02-claude-spends.ts",
+    "individual:03": "tsx individual/03-cap-denies.ts",
+    "builder:01": "tsx builder/01-provision-tenant.ts",
+    "builder:02": "tsx builder/02-tenant-spends.ts",
+    "builder:03": "tsx builder/03-isolation-proof.ts",
+    "builder:04": "tsx builder/04-usage-per-tenant.ts",
+    "inspector": "tsx inspector/server.ts",
+    "builder:05": "tsx builder/05-revoke.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0",
+    "dotenv": "^17.2.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "@types/node": "^22.15.0"
+  }
+}
