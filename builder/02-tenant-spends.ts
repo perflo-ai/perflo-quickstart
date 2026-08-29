@@ -1,4 +1,4 @@
-// Builder, example 2 of 4: spend as one customer.
+// Builder, example 2 of 6: spend as one customer.
 //
 // Run: pnpm builder:02
 // Needs: pnpm builder:01 first.

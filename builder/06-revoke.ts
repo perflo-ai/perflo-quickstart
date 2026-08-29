@@ -1,6 +1,6 @@
-// Builder, example 5 of 5: clean up after yourself.
+// Builder, example 6 of 6: clean up after yourself.
 //
-// Run: pnpm builder:05
+// Run: pnpm builder:06
 //
 // What this shows:
 //   Revoking a key, and why the order matters when you rotate one for real.

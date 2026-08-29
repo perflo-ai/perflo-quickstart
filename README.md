@@ -67,12 +67,13 @@ pnpm builder:01           # create two customer budgets
 pnpm builder:02           # spend as one customer
 pnpm builder:03           # one customer runs out, the others keep working
 pnpm builder:04           # see what each customer cost you, free
-pnpm builder:05           # revoke the demo keys, free
+pnpm builder:05           # watch charges land, free. Ctrl+C to stop
+pnpm builder:06           # revoke the demo keys, free
 ```
 
 `builder:01` mints two **live** spending keys and writes them **in plaintext**
 to `.tenants.json`. That file is demo storage, not a design to copy. Run
-`pnpm builder:05` when you are done, to revoke them and delete it.
+`pnpm builder:06` when you are done, to revoke them and delete it.
 
 Read `builder/README.md` for the full explanation of the model.
 
@@ -153,7 +154,8 @@ pnpm individual:01 --yes       # skip the prompt, when you are ready
 calls. What it will not do is spend. `DRY_RUN=1` in your `.env` does the same
 thing everywhere.
 
-Two examples never charge you at all: `builder:04` and `builder:05`.
+Three examples never charge you at all: `builder:04`, `builder:05` and
+`builder:06`.
 
 ---
 
@@ -201,10 +203,9 @@ builder/01           Create an envelope and a key per customer.
 builder/02           Spend as one customer. Prove a key cannot cross over.
 builder/03           One customer runs out, the others do not notice.
 builder/04           What each customer cost you this month. Free.
-builder/05           Revoke the demo keys and delete the file. Free.
+builder/05           Local page showing charges as they land. Optional, free.
+builder/06           Revoke the demo keys and delete the file. Free.
 builder/tenants.ts   Demo-only storage for the keys 01 mints.
-
-inspector/           Optional local page that shows charges as they land.
 
 docs/credentials.md  The two key types, rotation, and what to do on a leak.
 docs/errors.md       The error codes you will meet here, and what to do.

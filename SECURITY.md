@@ -26,7 +26,7 @@ exact request on our side.
 
 1. **`.tenants.json` is demo storage.** `builder/01` writes live spending keys
    to it in plaintext. Use your existing secret store instead, encrypted, keyed
-   by the customer. Run `pnpm builder:05` to clean up the demo keys.
+   by the customer. Run `pnpm builder:06` to clean up the demo keys.
 2. **The inspector has no authentication.** If you build a real dashboard from
    it, add auth **before** you add any route that writes. An unauthenticated
    write route next to an account key is a remote money mover.

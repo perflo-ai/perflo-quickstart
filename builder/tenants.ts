@@ -26,7 +26,7 @@ export interface Tenant {
 const WARNING =
   "LIVE SPENDING CREDENTIALS. Demo storage only, written by the Perflo " +
   "quickstart. If you are reading this outside that quickstart, revoke these " +
-  "keys now with DELETE /v1/keys/{id}, or run pnpm builder:05.";
+  "keys now with DELETE /v1/keys/{id}, or run pnpm builder:06.";
 
 export function saveTenants(tenants: Tenant[]): void {
   // The warning rides inside the file because JSON has no comments, and this

@@ -14,5 +14,5 @@
     "noEmit": true,
     "types": ["node"]
   },
-  "include": ["src", "individual", "builder", "inspector"]
+  "include": ["src", "individual", "builder"]
 }

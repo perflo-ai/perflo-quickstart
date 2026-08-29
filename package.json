@@ -17,8 +17,8 @@
     "builder:02": "tsx builder/02-tenant-spends.ts",
     "builder:03": "tsx builder/03-isolation-proof.ts",
     "builder:04": "tsx builder/04-usage-per-tenant.ts",
-    "inspector": "tsx inspector/server.ts",
-    "builder:05": "tsx builder/05-revoke.ts"
+    "builder:05": "tsx builder/05-inspector.ts",
+    "builder:06": "tsx builder/06-revoke.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",

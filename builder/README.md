@@ -41,7 +41,7 @@ to that customer's agent.
 The lock is enforced on our side. A bug in your code cannot make customer A's key
 spend from customer B's envelope. The request is refused, not redirected.
 
-## The four examples
+## The six examples
 
 Run them in order. Each one prints the next command.
 
@@ -51,9 +51,18 @@ Run them in order. Each one prints the next command.
 | `pnpm builder:02` | A customer's key sees and spends only its own budget | ~$0.03 |
 | `pnpm builder:03` | One customer running out does not affect the others | ~$0.08 |
 | `pnpm builder:04` | What each customer cost you, ready for billing | Free |
+| `pnpm builder:05` | Charges landing live, on a local page | Free |
+| `pnpm builder:06` | Revoking a key, and the order to rotate one in | Free |
 
 Example 01 stores the keys it mints in `.tenants.json`, which is gitignored,
-because a key is returned once and never again. Examples 02 to 04 read it back.
+because a key is returned once and never again. Examples 02 to 06 read it back.
+
+**05 is a server, not a script.** It runs until you stop it with Ctrl+C. Open
+http://localhost:4402 and run an earlier example in a second terminal to watch
+a charge appear. Skip it if you only want the integration.
+
+**Run 06 before you put this repo down.** Example 01 minted two live spending
+keys and they are sitting in `.tenants.json` in plaintext.
 
 ## The one thing envelope isolation does not cover
 

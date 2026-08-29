@@ -1,4 +1,4 @@
-// Builder, example 1 of 4: give each customer their own budget.
+// Builder, example 1 of 6: give each customer their own budget.
 //
 // Run: pnpm builder:01
 //
@@ -121,7 +121,7 @@ try {
   step("against the customer it belongs to. Never log a key. Never send one to");
   step("a browser.");
   step("");
-  step("When you are done with this track, run pnpm builder:05 to revoke both");
+  step("When you are done with this track, run pnpm builder:06 to revoke both");
   step("keys and delete the file.");
 
   nextCommand("pnpm builder:02", "Spend as one of these customers.");

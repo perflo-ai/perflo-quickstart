@@ -1,4 +1,4 @@
-// Builder, example 4 of 4: what did each customer cost you.
+// Builder, example 4 of 6: what did each customer cost you.
 //
 // Run: pnpm builder:04
 //
@@ -114,6 +114,9 @@ try {
   console.log("  enforced isolation, and per customer billing data.");
   console.log("");
   console.log("  Next: pnpm builder:05");
+  console.log("  Optional. Opens a local page that shows charges as they land.");
+  console.log("");
+  console.log("  Then: pnpm builder:06");
   console.log("  Revokes the two demo keys and deletes .tenants.json. Do this");
   console.log("  before you put the repo down, because those keys are live and");
   console.log("  stored in plaintext.");

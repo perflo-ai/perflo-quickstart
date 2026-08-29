@@ -1,4 +1,4 @@
-// Builder, example 3 of 5: one customer runs out, the others do not notice.
+// Builder, example 3 of 6: one customer runs out, the others do not notice.
 //
 // Run: pnpm builder:03
 // Needs: pnpm builder:01 first.

@@ -1,9 +1,18 @@
-// Optional. A small page that shows charges as they land.
+// Builder, example 5 of 6: watch charges land.
 //
-// Run: pnpm inspector    then open http://localhost:4402
+// Run: pnpm builder:05    then open http://localhost:4402
+//
+// Optional, and the only example here that is a server rather than a script.
+// It stays running until you stop it with Ctrl+C, so run an earlier example in
+// a second terminal and watch the charge appear.
+//
+// It shows your spendable balance, this month broken down by customer, and the
+// most recent charges. It refreshes every three seconds.
 //
 // This is not part of any integration. It exists because watching a charge
 // appear makes the idea concrete in a way reading a JSON response does not.
+//
+// Cost: nothing. It only reads.
 //
 // Two things here are worth copying.
 //
